@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#05060b" />
+  <title>NOCTRA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <canvas id="scene"></canvas>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="NOCTRA home">
+      <span class="brand-mark"></span>
+      <span>NOCTRA</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#work">Work</a>
+      <a href="#systems">Systems</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid"></div>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">DIGITAL SYSTEMS / INTERACTIVE DESIGN</p>
+        <h1>
+          We build
+          <span class="gradient-text">digital motion</span>
+          that feels alive.
+        </h1>
+        <p class="hero-text">
+          Immersive web experiences built with real-time 3D, focused interaction,
+          and motion that reacts to the user instead of sitting still.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary magnetic" href="#work">
+            <span>Explore projects</span>
+            <span class="button-arrow">↗</span>
+          </a>
+          <a class="text-link magnetic" href="#about">What we do</a>
+        </div>
+      </div>
+
+      <div class="hero-meta reveal">
+        <div class="meta-block">
+          <span class="meta-label">FOCUS</span>
+          <strong>3D / WebGL / Motion</strong>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">MODE</span>
+          <strong>Always interactive</strong>
+        </div>
+      </div>
+
+      <div class="scroll-cue">
+        <span>SCROLL</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>INTERACTIVE WEB</span><i></i>
+        <span>REAL-TIME 3D</span><i></i>
+        <span>MOTION DESIGN</span><i></i>
+        <span>CREATIVE CODE</span><i></i>
+        <span>INTERACTIVE WEB</span><i></i>
+        <span>REAL-TIME 3D</span><i></i>
+        <span>MOTION DESIGN</span><i></i>
+        <span>CREATIVE CODE</span><i></i>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Built to move.</h2>
+        </div>
+        <p>
+          Each concept is designed around motion, depth, interaction,
+          and the feeling that the interface is responding back.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal tilt-card">
+          <div class="project-visual visual-one">
+            <div class="orb orb-a"></div>
+            <div class="orb orb-b"></div>
+            <div class="scanline"></div>
+            <div class="visual-label">01 / SIGNAL</div>
+          </div>
+          <div class="project-copy">
+            <div>
+              <span>Interactive identity</span>
+              <h3>Signal Field</h3>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card">
+          <div class="project-visual visual-two">
+            <div class="wireframe-ring ring-1"></div>
+            <div class="wireframe-ring ring-2"></div>
+            <div class="wireframe-ring ring-3"></div>
+            <div class="visual-label">02 / GRAVITY</div>
+          </div>
+          <div class="project-copy">
+            <div>
+              <span>Realtime experiment</span>
+              <h3>Gravity Core</h3>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal tilt-card wide">
+          <div class="project-visual visual-three">
+            <div class="grid-surface"></div>
+            <div class="beam"></div>
+            <div class="visual-label">03 / SYNTHESIS</div>
+          </div>
+          <div class="project-copy">
+            <div>
+              <span>Spatial interface</span>
+              <h3>Synthetic Horizon</h3>
+            </div>
+            <span class="project-arrow">↗</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section systems-section" id="systems">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">SYSTEMS</p>
+          <h2>Designed in layers.</h2>
+        </div>
+      </div>
+
+      <div class="system-list">
+        <article class="system-item reveal">
+          <span class="system-index">01</span>
+          <div>
+            <h3>Real-time 3D</h3>
+            <p>Three.js scenes, WebGL motion, particle systems, lighting, shaders, and camera choreography.</p>
+          </div>
+          <span class="system-symbol">＋</span>
+        </article>
+
+        <article class="system-item reveal">
+          <span class="system-index">02</span>
+          <div>
+            <h3>Interaction</h3>
+            <p>Pointer response, magnetic controls, depth, parallax, hover states, and interface physics.</p>
+          </div>
+          <span class="system-symbol">＋</span>
+        </article>
+
+        <article class="system-item reveal">
+          <span class="system-index">03</span>
+          <div>
+            <h3>Motion language</h3>
+            <p>Scroll reveals, transition timing, animated hierarchy, subtle noise, and continuous ambient movement.</p>
+          </div>
+          <span class="system-symbol">＋</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-card reveal">
+        <div class="about-copy">
+          <p class="eyebrow">ABOUT NOCTRA</p>
+          <h2>Interfaces should feel physical.</h2>
+          <p>
+            This demo blends DOM animation with Three.js so the page feels like a
+            single visual system. The background reacts to your cursor, sections
+            reveal as you move, and project cards respond with depth.
+          </p>
+        </div>
+
+        <div class="about-stat">
+          <span>FRAMEWORK</span>
+          <strong>Vanilla JS</strong>
+        </div>
+
+        <div class="about-stat">
+          <span>3D ENGINE</span>
+          <strong>Three.js</strong>
+        </div>
+
+        <div class="about-stat">
+          <span>STYLE</span>
+          <strong>Responsive</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section">
+      <div class="cta-shell reveal">
+        <p class="eyebrow">NEXT PROJECT</p>
+        <h2>Make the browser feel less flat.</h2>
+        <a class="button button-primary magnetic" href="#top">
+          <span>Back to top</span>
+          <span class="button-arrow">↑</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>NOCTRA © 2026</span>
+    <span>HTML / CSS / JAVASCRIPT / THREE.JS</span>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+
